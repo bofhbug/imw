@@ -1,0 +1,197 @@
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+%html.no-js{ :lang => "en" }
+  <!--<![endif]-->
+  %head
+    %meta{ :charset => "utf-8" }/
+
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
+
+    %title 
+    %meta{ :name => "", :content => "" }/
+    %meta{ :name => "", :content => "" }/
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
+
+    %link{ :href => "css/normalize.min.css", :rel => "stylesheet" }/
+    %link{ :href => "css/main.css?v=1", :rel => "stylesheet" }/
+    %script{ :src => "js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" }
+
+  %body
+
+
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    .header-container
+      %header{class: "wrapper clearfix"}
+        %h1{class: "logo ir"} Deutsche Telekom
+        %h2{class: "logoclaim ir"} Life is for sharing.
+
+        %nav
+          %ul.main-nav
+            %li
+              %a{href: "#"} Deutsche Telekom for MVNOs
+            %li
+              %a{href: "#"} Selected Segments
+            %li
+              %a{href: "#"} Business Models
+            %li
+              %a{href: "#"} Contact Us
+            %li.filler
+
+    .main-container
+      %div{class: "main wrapper clearfix"}
+
+        %article.clearfix
+          %header
+            %h1 Deutsche Telekom for MVNOs
+            %p.intro 
+              Deutsche Telekom is one of the world's leading integrated telecommunications companies. 
+              We operate mobile networks in 15 European countries as well as the US and offer the only 
+              cross-Atlantic mobile telecommunications footprint in the world.
+
+          %section.span2
+            %p 
+              Our goal is to innovate our industry and provide our customers with the best possible service. 
+              We believe that partnerships are essential to achieving this objective and enabling Mobile Virtual 
+              Network Operators (MVNOs) is one the most important partnership forms in our strategy 
+              to achieve this objective.
+
+          %section.span2
+            %p 
+              We are  one of the pioneers in the Virtual Operator field and we host a number of the most 
+              successful MVNOs of the world on our networks. Our extensive experience and knowledge means 
+              that we can provide our partners with the best possible support to drive successful entry 
+              in the communications space.
+
+        %article.clearfix
+
+          %section.span3
+            %noscript{data: {mobilesrc: "img/content-business-140.jpg", 
+            fullsrc: "img/content-business.jpg"}, class: "responsivize"}
+              %img{src: "img/content-business-140.jpg"}
+          %section.span3
+            %noscript{data: {mobilesrc: "img/content-youth-140.jpg", 
+            fullsrc: "img/content-youth.jpg"}, class: "responsivize"}
+              %img{src: "img/content-youth-140.jpg"}
+          %section.span3
+            %noscript{data: {mobilesrc: "img/content-ethnic-140.jpg", 
+            fullsrc: "img/content-ethnic.jpg"}, class: "responsivize"}
+              %img{src: "img/content-ethnic-140.jpg"}
+
+        %hr
+
+        %article.clearfix.segments
+          %header
+            %h1 Selected Segments
+            %p
+              Offering mobile services allows our partners to monetize existing assets 
+              and make existing products and services more compelling. If you are active 
+              in one of the following industries, there is  significant potential in partnering 
+              with us to offer mobile telecommunications services. There is also potential 
+              beyond these industries, and no limit to the innovation potential of MVNO services!
+
+          %section.span3
+            %h2 Retailers
+            .vector.bordered 
+              %img{src: "img/pic_retailers.svg"}
+            %ul
+              %li Increase footfall in own points of sales
+              %li Improve loyalty of customer base with cross segment/category campaigns
+              %li Exploit revenues from mobile services and devices
+
+
+          %section.span3
+            %h2 Ethnic Brands
+            .vector.bordered
+              %img{src: "img/pic_ethnic_brands.svg"}
+            %ul
+              %li Monetize international calling routes and customer base
+              %li Provide best value mobile service for international calls
+              %li Target ethnic groups with individual mobile services
+
+
+          %section.span3
+            %h2 Youth Brands
+            .vector.bordered
+              %img{src: "img/pic_youth_brands.svg"}
+            %ul
+              %li Monetize brand awareness and media reach in teenagers and young adults segment
+              %li Grow customers' brand interaction time and content consumption
+              %li Stimulate brand loyalty
+
+        %article.clearfix.segments
+
+          %section.span3
+            %h2 Social Networks
+            .vector.bordered
+              %img{src: "img/pic_social_networks.svg"}
+            %ul
+              %li Provide specific price propositions for the mobile social network usage
+              %li Monetize user base by adding social commerce and service extras
+              %li Encourage user stickiness by integrating mobile services into core of brand proposition
+
+          %section.span3
+            %h2 Fixed Operators
+            .vector.bordered
+              %img{src: "img/pic_fixed_operators.svg"}
+            %ul
+              %li Provide full telecommunications portfolio to subscriber base
+              %li Reduce churn by offering multi-play bundles
+              %li Leverage existing network assets to provide integrated services
+
+          %section.span3
+            %h2 Data
+            .vector.bordered
+              %img{src: "img/pic_data.svg"}
+            %ul
+              %li Improve product appeal by bundling devices and connectivity
+              %li Offer advanced services (e.g. M2M, maintenance service)
+              %li Add continuous service revenues to one-time device sales revenues
+
+        %hr
+
+        %article.clearfix
+          %header
+            %h1 MVNO Business Models
+
+          %section
+            %p
+              We are experienced in large a variety of business models, complementing our 
+              partners' assets, competencies and investments. Jointly with our partners, 
+              we select the best fitting commercial and technical set-up for each co-operation.
+
+            %p
+              Our solution portfolio ranges from brand licensing/branded reselling to national 
+              roaming - and includes any model in between. In the first case we operationally 
+              manage the whole mobile service delivery and rely on our partners' branding and 
+              marketing assets, in the latter case our partner runs an own mobile (core) network.
+
+          %section.span3.boxed.dark
+            %h3 
+              Branded Resale/
+              Brand Licensing
+            %p 
+              For partners for whom telco is 
+              suitable brand extension, but 
+              not a core business.
+            %h4 Our main contribution
+            %ul
+              %li Mobile network services
+              %li Numbering, roaming
+              %li Operations and business support
+              %li Product management
+
+    .footer-container
+      %footer{class: "wrapper"}
+        %h3 Footer goes here
+
+    
+    %script{src: "js/vendor/jquery-1.9.0.min.js"}
+    %script{src: "js/main.js"}
+
