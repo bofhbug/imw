@@ -1,24 +1,41 @@
 !!! 5
 -# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> 
 %html.no-js{ :lang => "en" }
   <!--<![endif]-->
   %head
+
+
+
     %meta{ :charset => "utf-8" }/
 
     %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
 
-    %title 
-    %meta{ :name => "", :content => "" }/
-    %meta{ :name => "", :content => "" }/
+    %title Deutsche Telekom AG - International Mobile Wholesale 
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
 
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    %script{src: "js/vendor/modernizr-latest.js" }
     %link{ :href => "css/normalize.min.css", :rel => "stylesheet" }/
+
+    <!--[if !IE]><!-->
     %link{ :href => "css/main.css?v=1", :rel => "stylesheet" }/
-    %script{ :src => "js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" }
+    <!--<![endif]-->
+    <!--[if gte IE 9]>
+    %link{ :href => "css/main.css?v=1", :rel => "stylesheet" }/
+    <![endif]-->
+    <!--[if lte IE 8]>
+    %link{ :href => "css/ie8.css?v=1", :rel => "stylesheet" }/
+    <script type="text/javascript" src="js/PIE_IE678.js"></script>
+    <![endif]-->
+
 
   %body
 
@@ -34,18 +51,221 @@
 
         %nav
           %ul.main-nav
-            %li
-              %a#link1{href: "#"} Deutsche Telekom for MVNOs
-            %li
-              %a#link2{href: "#"} Selected Segments
-            %li
-              %a#link3{href: "#"} Business Models
-            %li
-              %a#link4{href: "#"} Contact Us
+            %li#link1
+              %a{href: "#"} Deutsche Telekom for MVNOs
+            %li#link2
+              %a{href: "#"} Selected Segments
+            %li#link3
+              %a{href: "#"} Business Models
+            %li#link4
+              %a{href: "#"} Contact Us
             %li.filler
 
+      .mini-nav-wrapper
+        %select.mini-nav
+          %option{value: ""} Please choose ...
+          %option{value: "1"} Deutsche Telekom for MVNOs
+          %option{value: "2"} Selected Segments
+          %option{value: "3"} Business Models
+          %option{value: "4"} Contact Us
+        %p Navigation:
+
     .main-container
-      %div{class: "main wrapper clearfix"}
+      .imprint.content.subcontent.wrapper.clearfix
+        %article.clearfix
+          %header
+            %h1 Imprint
+          %section.clearfix
+            .imprint-left
+              %h3 Address:
+              %p
+                %strong Deutsche Telekom AG
+                %br/
+                Friedrich Ebert Allee 140
+                %br/
+                53113 Bonn
+                %br/
+                %br/
+                Local Court Entry Bonn HRB 6794,
+                %br/
+                %br/
+                %strong Company Headquarters:
+                %br/
+                Bonn, Germany
+            .imprint-right
+              %h3 Responsible:
+              %p
+                %strong Ursula Knipp
+                %br/
+                %br/
+                Deutsche Telekom AG
+                %br/ 
+                P.O. Box 2000
+                %br/ 
+                53105 Bonn, Germany
+          %section.clearfix
+            .imprint-left
+              %h3 Authorized to represent:
+              %p
+                Ren&eacute; Obermann
+                %br/
+                Reinhard Clemens
+                %br/
+                Niek Jan van Damme
+                %br/
+                Timotheus H&ouml;ttges
+                %br/
+                Dr. Thomas Kremer
+                %br/
+                Claudia Nemat
+                %br/
+                Prof. Dr. Marion Schick
+
+            .imprint-right
+              %h3 Editorial Staff:
+              %p
+                Hugo M&aacute;rquez
+                %br/
+                MagyarCom Services Ltd.
+                %br/
+                K&oacute;rh&aacute;z u. 6-12
+                %br/
+                1033 Budapest, Hungary
+
+
+
+      .legaldisclaimer.content.subcontent.wrapper.clearfix
+        %article.clearfix
+          %header
+            %h1 Legal Disclaimer
+          %section.clearfix
+            %p
+              Deutsche Telekom AG in no way guarantees that the information 
+              made available on this website is complete, accurate or 
+              up-to-date in all cases. This also applies to any links to 
+              which this website may refer, directly or indirectly. 
+              Deutsche Telekom AG shall not be held responsible for the 
+              contents of a page accessed via such a link. Deutsche Telekom 
+              AG reserves the right to amend or supplement the information 
+              supplied without prior notice.
+            %p
+              The information on this website does not constitute an offer 
+              to sell or the solicitation of an offer to buy any securities 
+              and should not be relied upon in connection with any investment 
+              decision. In no event shall Deutsche Telekom be liable for 
+              any special, indirect or consequential damages or any 
+              damages whatsoever resulting from loss of use, data or 
+              profits, whether in an action of contract, negligence, 
+              or other tortious action, arising out of or in connection 
+              with the use or performance of documents, services, or 
+              information available from this website.
+            %p
+              With the exception of historical information, the matters 
+              discussed in the materials and documents on this website 
+              are "forward-looking statements" for U.S. securities law 
+              purposes. These forward-looking statements rely on a 
+              number of risks, uncertainties or other factors, many of 
+              which are outside Deutsche Telekom's control, that could 
+              cause actual results to differ materially from such 
+              statements. For a more detailed description of these 
+              risks, uncertainties and other factors, see Deutsche 
+              Telekom's filings with the U.S. Securities and Exchange 
+              Commission (and in particular its most recent annual 
+              report on Form 20-F). Readers are cautioned not to put 
+              undue reliance on these forward-looking statements. 
+              Deutsche Telekom disclaims any intention or obligation 
+              to update or revise any forward-looking statements, 
+              whether as a result of new information, future events 
+              or otherwise.
+
+      .privacypolicy.content.subcontent.wrapper.clearfix
+        %article.clearfix
+          %header
+            %h1 Privacy Policy
+          %section
+            %p
+              Thank you for visiting this Website. Deutsche Telekom 
+              is fully aware of the importance of privacy and is 
+              committed to protecting it. This principle is 
+              integral to our corporate culture, and reflected 
+              in all our products and services. We make all 
+              efforts to keep your personal data confidential. 
+              We continue to review and, where necessary, improve 
+              our data protection procedures to safeguard your 
+              privacy. 
+            %p
+              This privacy statement explains what information 
+              we record while you visit our site, and how we use 
+              it. The statement does not apply to Websites 
+              operated by companies who do not belong to the 
+              Deutsche Telekom Group but who provide links to 
+              this or to any other Website run by Deutsche Telekom.
+            %h3
+              Collection and use of personal data
+            %p
+              When you visit our Websites, our Web server records 
+              the following data in a temporary log for system 
+              security purposes:
+              %br/
+              the domain name or IP address of the calling computer, 
+              the access date, details of any file requested by 
+              the client (file name and URL), the HTTP response 
+              code, the referring URL (the Webpage you visited 
+              last), and the number of bytes transferred during 
+              the session. We may store information on your PC 
+              in the form of cookies. A cookie is a piece of 
+              information that a Website can send to your 
+              browser, and store on your system. Cookies do not 
+              give us access to your system or to your personal 
+              data. However, you should be aware that your browser's 
+              default settings permit the use of cookies. If you do 
+              not want to use cookies, you can change these settings 
+              accordingly. We use cookies solely to tailor our 
+              Website to your personal needs and preferences.
+            %p
+              Personal data - such as your name, address, phone 
+              number or e-mail address - is not recorded unless 
+              you provide it voluntarily, e.g. when you take part in 
+              an online survey or enter a contest or sweepstake, or 
+              submit a job application. Personal data recorded when 
+              you visit a Deutsche Telekom Website is only used in 
+              accordance with the statutory regulations of the 
+              country in which the Deutsche Telekom company is domiciled.
+            %h3
+              Use and dissemimation of the personal information described above
+            %p
+              Your personal information is used exclusively by Deutsche 
+              Telekom for the administration of our Websites and to better 
+              meet your needs and preferences - in which case the details 
+              you enter on a Webpage will be employed solely for the purpose 
+              stated there. If you have given us your consent, we may make 
+              use of the information you volunteer for specific 
+              product-related surveys and marketing, but not for any other, 
+              unspecified purpose. We will only disclose the data to 
+              government agencies if required to do so by law. Our employees 
+              are bound by appropriate confidentiality agreements.
+            %h3
+              Freedom of information
+            %p
+              Please send a written request to the relevant Deutsche Telekom 
+              company if you wish to review the data we have stored on 
+              you (e.g. name, address).
+            %h3
+              Security
+            %p
+              Deutsche Telekom uses state-of-the-art physical, electronic 
+              and managerial methods and processesto protect the personal 
+              data you send us from unauthorized access and misuse.
+            %h3
+              Contact Us
+            %p
+              If you have any questions, suggestions, or specific 
+              requests to change, freeze or delete your personal 
+              data, please contact Deutsche Telekom AG or the relevant 
+              Deutsche Telekom company, if known.
+
+
+      .main.wrapper.clearfix.content.maincontent
 
         %article.clearfix
           %header
@@ -71,17 +291,11 @@
         %article.clearfix
 
           %section.span3.imgspan3
-            %noscript{data: {mobilesrc: "img/content-business-140.jpg", 
-            fullsrc: "img/content-business.jpg"}, class: "responsivize"}
-              %img{src: "img/content-business-140.jpg"}
+            %img{src: "img/content-business.jpg", alt: "Business"}
           %section.span3.imgspan3
-            %noscript{data: {mobilesrc: "img/content-ethnic-140.jpg", 
-            fullsrc: "img/content-ethnic.jpg"}, class: "responsivize"}
-              %img{src: "img/content-ethnic-140.jpg"}
+            %img{src: "img/content-ethnic.jpg", alt: "Ethnic"}
           %section.span3.imgspan3
-            %noscript{data: {mobilesrc: "img/content-youth-140.jpg", 
-            fullsrc: "img/content-youth.jpg"}, class: "responsivize"}
-              %img{src: "img/content-youth-140.jpg"}
+            %img{src: "img/content-youth.jpg", alt: "Youth"}
 
         %hr
 
@@ -95,11 +309,22 @@
               offer mobile telecommunications services. Beyond these fields there are limitless 
               innovation possibilities with MVNO services!
 
+            %hr.mobile-only
+
           %section.span3
             %h2 Retailers
             .spanwrapper
               .vector.bordered 
-                %img{src: "img/pic_retailers.svg"}
+                <!--[if lte IE 8]>
+                %img{src: "img/pic_retailers.png", alt: "Retailers"}
+                <![endif]--> 
+                <!--[if gte IE 9]>
+                %img{src: "img/pic_retailers.svg", alt: "Retailers"}
+                <![endif]--> 
+                <!--[if !IE]><!-->
+                %img{src: "img/pic_retailers.svg", alt: "Retailers"}
+                <!--<![endif]--> 
+
               %ul
                 %li Increase points of sales footfall
                 %li Improve loyalty of customer base with cross segment/category campaigns
@@ -111,7 +336,15 @@
             %h2 Ethnic Brands
             .spanwrapper
               .vector.bordered
-                %img{src: "img/pic_ethnic_brands.svg"}
+                <!--[if lte IE 8]>
+                %img{src: "img/pic_ethnic_brands.png", alt: "Ethnic Brands"}
+                <![endif]--> 
+                <!--[if gte IE 9]>
+                %img{src: "img/pic_ethnic_brands.svg", alt: "Ethnic Brands"}
+                <![endif]--> 
+                <!--[if !IE]><!-->
+                %img{src: "img/pic_ethnic_brands.svg", alt: "Ethnic Brands"}
+                <!--<![endif]-->
               %ul
                 %li Monetize international calling routes and customer base
                 %li Provide best value mobile service for international calls
@@ -123,7 +356,15 @@
             %h2 Youth Brands
             .spanwrapper
               .vector.bordered
-                %img{src: "img/pic_youth_brands.svg"}
+                <!--[if lte IE 8]>
+                %img{src: "img/pic_youth_brands.png", alt: "Youth Brands"}
+                <![endif]--> 
+                <!--[if gte IE 9]>
+                %img{src: "img/pic_youth_brands.svg", alt: "Youth Brands"}
+                <![endif]--> 
+                <!--[if !IE]><!-->
+                %img{src: "img/pic_youth_brands.svg", alt: "Youth Brands"}
+                <!--<![endif]-->
               %ul
                 %li Monetize brand awareness and media reach with teenager and young adult segments
                 %li Grow customers' brand interaction time and content consumption
@@ -136,7 +377,15 @@
             %h2 Social Networks
             .spanwrapper
               .vector.bordered
-                %img{src: "img/pic_social_networks.svg"}
+                <!--[if lte IE 8]>
+                %img{src: "img/pic_social_networks.png", alt: "Social Networks"}
+                <![endif]--> 
+                <!--[if gte IE 9]>
+                %img{src: "img/pic_social_networks.svg", alt: "Social Networks"}
+                <![endif]--> 
+                <!--[if !IE]><!-->
+                %img{src: "img/pic_social_networks.svg", alt: "Social Networks"}
+                <!--<![endif]-->
               %ul
                 %li Provide specific propositions for mobile social network use
                 %li Monetize user base by adding social commerce and service extras
@@ -147,7 +396,15 @@
             %h2 Fixed Operators
             .spanwrapper
               .vector.bordered
-                %img{src: "img/pic_fixed_operators.svg"}
+                <!--[if lte IE 8]>
+                %img{src: "img/pic_fixed_operators.png", alt: "Fixed Operators"}
+                <![endif]--> 
+                <!--[if gte IE 9]>
+                %img{src: "img/pic_fixed_operators.svg", alt: "Fixed Operators"}
+                <![endif]--> 
+                <!--[if !IE]><!-->
+                %img{src: "img/pic_fixed_operators.svg", alt: "Fixed Operators"}
+                <!--<![endif]-->
               %ul
                 %li Provide full telecommunications portfolio to subscriber base
                 %li Reduce churn by offering multi-play bundles
@@ -158,20 +415,26 @@
             %h2 Data
             .spanwrapper
               .vector.bordered
-                %img{src: "img/pic_data.svg"}
+                <!--[if lte IE 8]>
+                %img{src: "img/pic_data.png", alt: "Data"}
+                <![endif]--> 
+                <!--[if gte IE 9]>
+                %img{src: "img/pic_data.svg", alt: "Data"}
+                <![endif]--> 
+                <!--[if !IE]><!-->
+                %img{src: "img/pic_data.svg", alt: "Data"}
+                <!--<![endif]-->
               %ul
                 %li Improve product appeal by bundling devices and connectivity
                 %li Offer advanced services (e.g. M2M, maintenance service)
                 %li Add continuous service revenues to one-time device sales revenues
             %hr
 
-        %hr
+        %hr.section-divider
 
         %article.clearfix.business-models
           %header
             %h1 MVNO Business Models
-
-          %section
             %p
               We have experience with a large variety of business models that complement 
               our partners' assets, competencies and investments. Together with our partners, 
@@ -183,13 +446,16 @@
               manage the whole mobile service delivery and rely on our partners' branding and 
               marketing assets. In the latter case, our partners run their own mobile (core) network.
 
+          %section
+
           .fixed-height-wrapper.clearfix
 
             %section.span3.fixed
               .boxed.dark
                 %h3 
                   Branded Resale/
-                  %br Brand Licensing
+                  %br/ 
+                  Brand Licensing
                 %p 
                   For partners where telco is a suitable brand extension,
                   but not a core business.
@@ -213,7 +479,8 @@
               .boxed.medium
                 %h3
                   Light MVNO/
-                  %br Service Provider
+                  %br/ 
+                  Service Provider
                 %p 
                   For partners with telco experience who need autonomy in marketing 
                   and pricing.
@@ -236,7 +503,8 @@
               .boxed.light
                 %h3 
                   Full MVNO/ 
-                  %br National Roaming
+                  %br/ 
+                  National Roaming
 
                 %p For partners with significant telco experience and assets.
 
@@ -261,21 +529,24 @@
         %h3 Contact Us
 
         .contact
-          %img{src: "img/Foto_Peter_Hoffmann_SD.jpg", class: "profile"}
+          %img{src: "img/peter-hoffmann.jpg", alt: "Peter Hoffmann", class: "profile", width: "159", height: "171"}
           %p.top 
             %strong Peter Hoffmann
-            %br Vice President
-            %br
+            %br/ 
+            Vice President
+            %br/
+            %br/
             International Mobile Wholesale
-            %br Deutsche Telekom AG
+            %br/ 
+            Deutsche Telekom AG
+            %br/
             53262 Bonn
-            %br
-            %br
+            %br/
+            %br/
             Phone: +49 228 181-18765
-            %br 
-              E-Mail: 
-              %a{href: "mailto:mvno@telekom.de"} mvno@telekom.de
-              %br
+            %br/ 
+            E-Mail: 
+            %a{href: "mailto:mvno@telekom.de"} mvno@telekom.de
           %p
             We offer the only transatlantic mobile communications footprint, 
             covering 15 European countries and the US.
@@ -312,34 +583,43 @@
 
 
 
-          %noscript{data: {mobilesrc: "img/Map_HD.png", 
-          fullsrc: "img/Map_HD.png"}, hiressrc: "img/Map_HD.png", class: "responsivize"}
-            %img{src: "img/Map_HD.png"}
+          .map-wrapper
+            %img{src: "img/Map.png", alt: "Map"}
 
       
         .clearfix
         .footerlinks
           %p.copyright
-            &copy;Deutsche Telekom, 2013
-            %a{href: "#"} Privacy Policy
-            |
-            %a{href: "#"} Legal Disclaimer
-            |
-            %a{href: "#"} Imprint
-          %p.otherlinks
-            Other Links: 
+            %span
+              Other Links: 
             %a{href: "http://telekom.de"} Deutsche Telekom
             |
-            %a{href: "#"} ICSS
+            %a{href: "http://www.telekom-icss.com/"} ICSS
             |
-            %a{href: "#"} MNC
+            %a{href: "https://www.multinationals.telekom.com/124358"} MNC
             |
-            %a{href: "#"} Machine-to-Machine (M2M)
+            %a{href: "http://m2m.telekom.com/"} Machine-to-Machine (M2M)
+          %p.otherlinks
+            %a{href: "#", id: 'link-privacypolicy'} Privacy Policy
+            |
+            %a{href: "#", id: 'link-legaldisclaimer'} Legal Disclaimer
+            |
+            %a{href: "#", id: 'link-imprint'} Imprint
+            %span.copyrightline
+              &copy;Deutsche Telekom, 2013
 
 
+
+      %script{src: "js/vendor/jquery-1.9.0.min.js"}
+
+
+      %script{src: "js/vendor/jquery.smooth-scroll.min.js"}
+
+
+      %script{src: "js/retina.js"}
+
+
+      %script{src: "js/main.js"}
 
     
-    %script{src: "js/vendor/jquery-1.9.0.min.js"}
-    %script{src: "js/vendor/jquery.smooth-scroll.min.js"}
-    %script{src: "js/main.js"}
 
