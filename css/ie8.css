@@ -195,6 +195,14 @@ header .intro {
   color: #4b4b4b;
 }
 
+footer h1 {
+  margin: 0;
+  margin-bottom: 1.4em;
+  font-size: 1.65em;
+  color: #e20074;
+  font-weight: normal;
+}
+
 section p {
   color: #797979;
 }
