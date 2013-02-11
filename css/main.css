@@ -173,6 +173,9 @@ header {
   header .intro {
     color: #4b4b4b; }
 
+.nowrap {
+  white-space: nowrap; }
+
 footer h1 {
   margin: 0;
   margin-bottom: 1.4em;

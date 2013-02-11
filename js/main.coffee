@@ -137,13 +137,15 @@ $(document).ready ->
 
 
   $('.span3 h2').click (e) ->
-    $(@).parent().find('.spanwrapper').toggle 'medium'
-    $(@).toggleClass 'open'
+    if ($(@).css('padding-left') == '20px')
+      $(@).parent().find('.spanwrapper').toggle 'medium'
+      $(@).toggleClass 'open'
 
   $('.span3 h3').click (e) ->
-    $(@).parent().find('.spanwrapper').toggle 'fast'
-    $(@).toggleClass 'open'
-    $(@).parent().parent().find('.fillerbox').toggle 'medium'
+    if ($(@).css('padding-left') == '20px')
+      $(@).parent().find('.spanwrapper').toggle 'fast'
+      $(@).toggleClass 'open'
+      $(@).parent().parent().find('.fillerbox').toggle 'medium'
 
 
 
