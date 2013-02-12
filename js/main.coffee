@@ -91,7 +91,7 @@ $(document).ready ->
     #$('#device').css('height', '200px')
     targetOffset = $('.selected-segments').offset()
     $.smoothScroll
-      offset: targetOffset.top - 100
+      offset: targetOffset.top - offsetMod
       #afterScroll: fixIt
   $('#link3').click (e) ->
     e.preventDefault()
@@ -99,15 +99,15 @@ $(document).ready ->
     #$('#device').css('height', '200px')
     targetOffset = $('.business-models').offset()
     $.smoothScroll
-      offset: targetOffset.top - 100
+      offset: targetOffset.top - offsetMod
       #afterScroll: fixIt
   $('#link4').click (e) ->
     e.preventDefault()
     fadeBackToNormal()
     #$('#device').css('height', '200px')
-    targetOffset = $('.footer-container').offset()
+    targetOffset = $('footer').offset()
     $.smoothScroll
-      offset: targetOffset.top - 100
+      offset: targetOffset.top - offsetMod
       #afterScroll: fixIt
   
   setBodyClass = (to) ->

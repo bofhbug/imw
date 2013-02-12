@@ -533,6 +533,10 @@ footer {
   .map-wrapper {
     width: 18em;
   }
+
+  .contact img {
+    float: none;
+  }
 }
 @media all and (min-width: 20em) {
   .mini-nav-wrapper {
@@ -648,6 +652,9 @@ footer {
   .map-wrapper {
     width: 18em;
   }
+  .contact img {
+    float: none;
+  }
 }
 /*
 @media all and (min-width: 30em) {
@@ -759,6 +766,9 @@ footer {
   }
   .map-wrapper {
     width: 30em;
+  }
+  .contact img {
+    float: left;
   }
 }
 
@@ -940,6 +950,9 @@ footer {
     float: right;
     width: 46.95652173913044%;
 
+  }
+  .contact img {
+    float: left;
   }
 }
 .subcontent h1 {
