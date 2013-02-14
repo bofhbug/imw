@@ -52,6 +52,7 @@ $(document).ready ->
 
 
   $('.mini-nav').change (e) ->
+    fadeBackToNormal()
     switch e.currentTarget.value
       when "1"
         $.smoothScroll
@@ -65,8 +66,10 @@ $(document).ready ->
         $.smoothScroll
           offset: targetOffset.top - offsetMod,
       when "4"
+        targetOffset = $('footer').offset()
         $.smoothScroll
-          offset: $(document).height(),
+          offset: targetOffset.top - offsetMod,
+    $('.mini-nav').val($(".mini-nav option:first").val())
 
   # PIE
   if (window.PIE)

@@ -14,6 +14,8 @@
     %meta{ :charset => "utf-8" }/
 
     %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
+    %meta{ "http-equiv" => "cache-control", :content => "no-transform" }/
+
 
     %title Deutsche Telekom AG - International Mobile Wholesale 
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
@@ -26,15 +28,26 @@
     %link{ :href => "css/normalize.min.css", :rel => "stylesheet" }/
 
     <!--[if !IE]><!-->
-    %link{ :href => "css/main.css?v=1", :rel => "stylesheet" }/
+    %link{ :href => "css/main.css?v=100", :rel => "stylesheet" }/
     <!--<![endif]-->
     <!--[if gte IE 9]>
-    %link{ :href => "css/main.css?v=1", :rel => "stylesheet" }/
+    %link{ :href => "css/main.css?v=100", :rel => "stylesheet" }/
     <![endif]-->
     <!--[if lte IE 8]>
-    %link{ :href => "css/ie8.css?v=1", :rel => "stylesheet" }/
+    %link{ :href => "css/ie8.css?v=100", :rel => "stylesheet" }/
     <script type="text/javascript" src="js/PIE_IE678.js"></script>
     <![endif]-->
+
+
+
+    %meta{name:"DCSext.dtg_group", content:"GHS"}
+    %meta{name:"DCSext.dtg_board", content:"V EU"}
+    %meta{name:"DCSext.dtg_country", content:"DE"}
+    %meta{name:"DCSext.dtg_lang", content:"de"}
+    %meta{name:"DCSext.dtg_ozt", content:"181"}
+
+    %script{src: "http://www.telekom.com/css_js/dtg.js"}
+    %script{src: "js/dti.js"}
 
 
   %body
@@ -46,8 +59,8 @@
 
     .header-container
       %header{class: "wrapper clearfix"}
-        %h1{class: "logo ir"} Deutsche Telekom
-        %h2{class: "logoclaim ir"} Life is for sharing.
+        %h1{class: "logo ir"} &nbsp; 
+        %h2{class: "logoclaim ir"} &nbsp;
 
         %nav
           %ul.main-nav
@@ -137,46 +150,41 @@
       .legaldisclaimer.content.subcontent.wrapper.clearfix
         %article.clearfix
           %header
-            %h1 Legal Disclaimer
+            %h1 Disclaimer
           %section.clearfix
             %p
-              Deutsche Telekom AG in no way guarantees that the information 
-              made available on this website is complete, accurate or 
-              up-to-date in all cases. This also applies to any links to 
-              which this website may refer, directly or indirectly. 
-              Deutsche Telekom AG shall not be held responsible for the 
-              contents of a page accessed via such a link. Deutsche Telekom 
-              AG reserves the right to amend or supplement the information 
-              supplied without prior notice.
+              Deutsche Telekom AG in no way guarantees that the 
+              information made available on this website is complete, 
+              accurate or up-to-date in all cases. This also applies 
+              to any links to other websites. Deutsche Telekom AG shall 
+              not be held responsible for the contents of a page accessed 
+              via such a link. Deutsche Telekom AG reserves the right to 
+              amend, supplement or delete the information supplied without 
+              prior notice.
             %p
-              The information on this website does not constitute an offer 
-              to sell or the solicitation of an offer to buy any securities 
-              and should not be relied upon in connection with any investment 
-              decision. In no event shall Deutsche Telekom be liable for 
-              any special, indirect or consequential damages or any 
-              damages whatsoever resulting from loss of use, data or 
-              profits, whether in an action of contract, negligence, 
-              or other tortious action, arising out of or in connection 
-              with the use or performance of documents, services, or 
-              information available from this website.
+              The information on this website does not constitute an 
+              offer to sell or the solicitation of an offer to buy any 
+              securities and should not be relied upon in connection with 
+              any investment decision. In no event shall Deutsche Telekom 
+              be liable for any damage whatsoever resulting from loss of 
+              use options or data loss in connection with the use of documents 
+              or information and/or from the performance of services available 
+              on this website.
             %p
               With the exception of historical information, the matters 
               discussed in the materials and documents on this website 
-              are "forward-looking statements" for U.S. securities law 
-              purposes. These forward-looking statements rely on a 
-              number of risks, uncertainties or other factors, many of 
-              which are outside Deutsche Telekom's control, that could 
-              cause actual results to differ materially from such 
-              statements. For a more detailed description of these 
-              risks, uncertainties and other factors, see Deutsche 
-              Telekom's filings with the U.S. Securities and Exchange 
-              Commission (and in particular its most recent annual 
-              report on Form 20-F). Readers are cautioned not to put 
+              are "forward-looking statements". These forward-looking 
+              statements rely on a number of risks, uncertainties or other 
+              factors, many of which are outside Deutsche Telekom AG's 
+              control, which could cause actual results to differ materially 
+              from such statements. These risks, uncertainties and other 
+              factors are described in detail in Deutsche Telekom's 
+              financial reports which are available on Deutsche Telekom's 
+              website. Visitors of this website are cautioned not to put 
               undue reliance on these forward-looking statements. 
-              Deutsche Telekom disclaims any intention or obligation 
-              to update or revise any forward-looking statements, 
-              whether as a result of new information, future events 
-              or otherwise.
+              Deutsche Telekom disclaims any intention or obligation to 
+              update or revise any forward-looking statements, whether 
+              as a result of new information, future events or otherwise.
 
       .privacypolicy.content.subcontent.wrapper.clearfix
         %article.clearfix
@@ -184,85 +192,86 @@
             %h1 Privacy Policy
           %section
             %p
-              Thank you for visiting this Website. Deutsche Telekom 
-              is fully aware of the importance of privacy and is 
-              committed to protecting it. This principle is 
-              integral to our corporate culture, and reflected 
-              in all our products and services. We make all 
-              efforts to keep your personal data confidential. 
-              We continue to review and, where necessary, improve 
-              our data protection procedures to safeguard your 
-              privacy. 
+              Data protection and data security for customers and users have a 
+              high priority for the entire Deutsche Telekom Group. We 
+              therefore attach great importance to the protection of 
+              personal data in all business processes.
             %p
-              This privacy statement explains what information 
-              we record while you visit our site, and how we use 
-              it. The statement does not apply to Websites 
-              operated by companies who do not belong to the 
-              Deutsche Telekom Group but who provide links to 
-              this or to any other Website run by Deutsche Telekom.
+              This privacy statement explains what kind of information is 
+              collected at the Deutsche Telekom Group during a visit to 
+              one of our Web sites and how we use this information. 
+              However, this does not apply to Web sites of companies 
+              which do not belong to the Group, even if they have 
+              a link to this or any other Web site of a Deutsche 
+              Telekom AG company. Should you wish to receive information 
+              on the collection and processing of personal data at 
+              specific companies of the Deutsche Telekom Group, 
+              please contact these companies directly or use our 
+              contact form.
             %h3
-              Collection and use of personal data
+              Collection and processing of personal data
             %p
-              When you visit our Websites, our Web server records 
-              the following data in a temporary log for system 
-              security purposes:
-              %br/
-              the domain name or IP address of the calling computer, 
-              the access date, details of any file requested by 
-              the client (file name and URL), the HTTP response 
-              code, the referring URL (the Webpage you visited 
-              last), and the number of bytes transferred during 
-              the session. We may store information on your PC 
-              in the form of cookies. A cookie is a piece of 
-              information that a Website can send to your 
-              browser, and store on your system. Cookies do not 
-              give us access to your system or to your personal 
-              data. However, you should be aware that your browser's 
-              default settings permit the use of cookies. If you do 
-              not want to use cookies, you can change these settings 
-              accordingly. We use cookies solely to tailor our 
-              Website to your personal needs and preferences.
-            %p
-              Personal data - such as your name, address, phone 
-              number or e-mail address - is not recorded unless 
-              you provide it voluntarily, e.g. when you take part in 
-              an online survey or enter a contest or sweepstake, or 
-              submit a job application. Personal data recorded when 
-              you visit a Deutsche Telekom Website is only used in 
-              accordance with the statutory regulations of the 
-              country in which the Deutsche Telekom company is domiciled.
+              For the purpose of system security, when you visit our Web sites, 
+              our Web server temporarily registers the domain name or the 
+              IP address of the requesting computer as well as the 
+              date of access, the file request of the client (file name 
+              and URL), the HTTP response code and the Web site from which 
+              you are visiting us, and the number of bytes transferred 
+              during the session. We might also, in some cases, store 
+              some information in the form of 'cookies' on your PC so 
+              that we can optimize our Web site according to your preferences. 
+              We will not collect any other personal data such as name, 
+              address, telephone number or e-mail address unless you provide 
+              this information voluntarily, e.g., when placing an online order 
+              for a product or service, a survey, a competition, or a request 
+              for information. Personal data collected during a visit to our 
+              Web site is processed exclusively in accordance with the legal 
+              provisions of the country in which the respective company is 
+              headquartered.
             %h3
-              Use and dissemimation of the personal information described above
+              Use and forwarding of personal data
             %p
-              Your personal information is used exclusively by Deutsche 
-              Telekom for the administration of our Websites and to better 
-              meet your needs and preferences - in which case the details 
-              you enter on a Webpage will be employed solely for the purpose 
-              stated there. If you have given us your consent, we may make 
-              use of the information you volunteer for specific 
-              product-related surveys and marketing, but not for any other, 
-              unspecified purpose. We will only disclose the data to 
-              government agencies if required to do so by law. Our employees 
-              are bound by appropriate confidentiality agreements.
+              We will use your personal data exclusively for the technical 
+              administration of the Web site and to meet your wishes 
+              and requests. Only in cases in which you have given 
+              us prior consent do we also use this data for product-related 
+              surveys and marketing purposes, but only to the extent 
+              needed in each specific case. We will not disclose any 
+              data to government agencies except where required by law. 
+              Our employees and business offices are obligated to treat 
+              the data as confidential.
+            %h3
+              Customer's decision
+            %p
+              The companies of Deutsche Telekom AG like to contact customers 
+              to provide them with information about special offers and 
+              news on products and services. If you register on our Web 
+              site or place an order for our products and services, you 
+              will be asked to indicate whether you would like to receive 
+              advertising information directly. Irrespective of your consent, 
+              it goes without saying that, as a Deutsche Telekom customer, 
+              you will continue to be notified of any important changes 
+              relating to existing service agreements (e.g., rate changes).
             %h3
               Freedom of information
             %p
-              Please send a written request to the relevant Deutsche Telekom 
-              company if you wish to review the data we have stored on 
-              you (e.g. name, address).
-            %h3
+              Upon written request, the respective company of the 
+              Deutsche Telekom Group will inform you of the personal 
+              data stored on you (e.g., name, address).
+            %h3 
               Security
             %p
-              Deutsche Telekom uses state-of-the-art physical, electronic 
-              and managerial methods and processes to protect the personal 
-              data you send us from unauthorized access and misuse.
+              We have taken extensive technical and operational precautions 
+              to protect the personal data retained by us against 
+              unauthorized access and misuse. Our security procedures 
+              are revised regularly and adapted to reflect technological 
+              progress.
             %h3
-              Contact Us
+              Contacts
             %p
-              If you have any questions, suggestions, or specific 
-              requests to change, freeze or delete your personal 
-              data, please contact Deutsche Telekom AG or the relevant 
-              Deutsche Telekom company, if known.
+              Should you wish any data to be corrected or deleted, or have 
+              any other questions or suggestions on data protection, 
+              please contact us.
 
 
       .main.wrapper.clearfix.content.maincontent
@@ -604,7 +613,7 @@
           %p.otherlinks
             %a{href: "#", id: 'link-privacypolicy'} Privacy Policy
             |
-            %a{href: "#", id: 'link-legaldisclaimer'} Legal Disclaimer
+            %a{href: "#", id: 'link-legaldisclaimer'} Disclaimer
             |
             %a{href: "#", id: 'link-imprint'} Imprint
             %span.copyrightline
@@ -622,6 +631,29 @@
 
 
       %script{src: "js/main.js"}
+
+
+      <!-- START OF SmartSource Data Collector TAG -->
+      <!-- Deutsche Telekom AG- Version 1.2 -->
+      <!-- $DateTime: 2010/09/22 17:00:00 $ --> 
+      :javascript
+        if (typeof(_ed)!="undefined"){
+          _ed.ed_sv = "1.2_" + window.location.hostname; 
+          if (typeof(_ed.init_an)=="function"){_ed.init_an();}
+        }
+      :javascript
+        var _tag=new WebTrends(); 
+        _tag.dcsGetId();
+      :javascript
+        _tag.dcsCustom=function(){
+          // Add custom parameters here.
+          //_tag.DCSext.param_name=param_value;
+        }
+        _tag.dcsCollect();
+
+      %noscript
+        %div
+          %img{alt:"DCSIMG", id:"DCSIMG", width:"1", height:"1", src:"https://mvno.telekom.de/dcsxln2virb0sziiu1yfoaoee_6i5i/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.3.0"}/
 
     
 
