@@ -5,7 +5,7 @@
 function WTinit(that){
 	// begin: user modifiable
 	that.dcsid="dcsxln2virb0sziiu1yfoaoee_6i5i";
-	that.domain="mvno.telekom.com";
+	that.domain="www.wtpx-telekom.com";
 	that.timezone=1;
 	that.fpcdom =".telekom.com";
 	that.fpcdom=(that.fpcdom=="")?window.location.hostname:that.fpcdom;
