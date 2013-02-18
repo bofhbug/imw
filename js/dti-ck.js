@@ -1,0 +1,4 @@
+// -- Deutsche Telekom AG- Version 1.3.1
+// -- Copyright (c) 1996-2011 WebTrends Inc. All rights reserved.
+// -- Copyright (c) 2007-2012 e-dynamics GmbH All rights reserved.
+function WTinit(e){e.dcsid="dcsxln2virb0sziiu1yfoaoee_6i5i";e.domain="www.wtpx-telekom.com";e.timezone=1;e.fpcdom=".telekom.com";e.fpcdom=e.fpcdom==""?window.location.hostname:e.fpcdom;e.onsitedoms=_ed.ed_doms;e.downloadtypes=_ed.ed_types;e.navigationtag="div,table";e.trackevents=!0;e.trimoffsiteparams=!0;e.enabled=!0;e.i18n=!1;e.fpc="WT_FPC";e.paidsearchparams="gclid";e.splitvalue="";e.preserve=!0}function ed_init(e){e.ed_doms=window.location.hostname;e.ed_doms+=",telekom.de,telekom.com";e.ed_types="xls,doc,ppt,pdf,txt,csv,zip,swf,wav,mp3,dot,pps,flv,docx,xlsx,pptx";e.ed_manualDownload=!0;e.ed_lst=!1;e.ed_iv="1.3.1_"+window.location.hostname}function ed_global(){};
