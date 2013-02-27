@@ -124,7 +124,7 @@ $(document).ready ->
     val = $(@).scrollTop()
     valWin = $(@).scrollTop()+$(@).height()
     if currentContent == '.maincontent'
-      if ($(@).scrollTop() + $(@).height()) > $(document).height() - 100
+      if ($(@).scrollTop() + $(@).height()) > ($(document).height() - 200)
         setBodyClass 'contact-state'
       else if val > $('.business-models').offset().top-130
         setBodyClass 'business-models-state'
