@@ -1,6 +1,40 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+@encoding "UTF-8";
+@font-face {
+  font-family: 'Tele-Icon';
+  src: url("../fonts/Tele-Icon.eot");
+  src: url("../fonts/Tele-Icon.eot?#iefix") format("embedded-opentype"), url("../fonts/Tele-Icon.svg#Tele-Icon") format("svg"), url("../fonts/Tele-Icon.woff") format("woff"), url("../fonts/Tele-Icon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon:before, .icon .before {
+  font-family: Tele-Icon;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'TeleGrotesk';
+  src: url("../fonts/TeleGroteskNormal.eot?") format("eot"), url("../fonts/TeleGroteskNormal.woff") format("woff");
+}
+@font-face {
+  font-family: 'TeleGroteskFett';
+  src: url("../fonts/TeleGroteskFett.eot?") format("eot"), url("../fonts/TeleGroteskFett.woff") format("woff");
+}
+@font-face {
+  font-family: 'TeleGroteskHalbfett';
+  src: url("../fonts/TeleGroteskHalbfett.eot?") format("eot"), url("../fonts/TeleGroteskHalbfett.woff") format("woff");
+}
+@font-face {
+  font-family: 'TeleGroteskUltra';
+  src: url("../fonts/TeleGroteskUltra.eot?") format("eot"), url("../fonts/TeleGroteskUltra.woff") format("woff");
+}
+
+
+
+
+
 
 html,
 button,
@@ -13,6 +47,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    background: #ededed;
 }
 
 ::-moz-selection {
@@ -64,8 +99,19 @@ body {
     font: 16px/26px Arial;
 }
 
-.wrapper {
+.header-container, .footer-container {
+  width: 964px;
+  left: 50%;
+  margin-left: -482px;
+}
+.maincontent, .main-container, .footer-container {
   margin: 0 auto;
+
+}
+header.wrapper {
+  background: transparent;
+  padding: 0;
+  width: 964px;
 }
 
 
@@ -109,7 +155,7 @@ body {
 }
 
 .vector {
-
+  background: #ededed;
   /*width: 17.25em;*/
   width: 100%;
   margin-bottom: 1.725em;
@@ -135,52 +181,55 @@ body {
   font-size: 1em;
   line-height: 0;
   margin: 0;
-  height: 4.8125em;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 23px;
+  margin-top: 20px !important;
   background-position: left top;
-  -webkit-background-size: 57.5em 4.8125em;
-  -o-background-size: 57.5em 4.8125em;
-  -moz-background-size: 57.5em 4.8125em;
-  background-size: 57.5em 4.8125em;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
 
-  background: white url('../img/logo.svg') no-repeat;
+  background: transparent url('../img/logo2.png') no-repeat;
+  -webkit-background-size: 100px 50px;
+  -o-background-size: 100px 50px;
+  -moz-background-size: 100px 50px;
+  background-size: 100px 50px;
 }
 .lt-ie10 .logo, .ie10 .logo {
-  background: white url('../img/logo.png') no-repeat;
+  background: white url('../img/logo2.png') no-repeat;
 
 }
-$logoclaimwidth: 7.3510625em;
-$logoclaimheight: 0.96475em;
+$logoclaimwidth: 188px;
+$logoclaimheight: 15px;
 .logoclaim {
   font-size: 1em;
   line-height: 0;
   margin: 0;
   padding: 0;
-  width: $logoclaimwidth;
-  height: $logoclaimheight;
+  width: 188px;
+  height: 15px;
   position: absolute;
   z-index: 100;
-  right: 1.5625em;
-  top: 0.9375em;
+  right: 0;
+  top: 42px;
   background-position: left top;
-  -webkit-background-size: $logoclaimwidth $logoclaimheight;
-  -o-background-size: $logoclaimwidth $logoclaimheight;
-  -moz-background-size: $logoclaimwidth $logoclaimheight;
-  background-size: $logoclaimwidth $logoclaimheight;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
 
-  background: white url('../img/logo-claim.svg') no-repeat;
+  background: white url('../img/logo2-claim.png') no-repeat;
+  -webkit-background-size: 188px 15px;
+  -o-background-size: 188px 15px;
+  -moz-background-size: 188px 15px;
+  background-size: 188px 15px;
 }
 .lt-ie10 .logoclaim, .ie10 .logogclaim {
-  background: white url('../img/logo-claim.png') no-repeat;
-  width: 117px;
-  height: 19px;
+  background: white url('../img/logo2-claim.png') no-repeat;
+  width: 188px;
+  height: 15px;
 }
 .header-container {
   position: fixed;
@@ -188,11 +237,12 @@ $logoclaimheight: 0.96475em;
   text-align: center;
   top: 0;
   z-index: 500;
+  height: 135px;
+  background: #ededed;
 }
 header {
-  background: #fff;
   position: relative;
-  margin-top: 3.1em;
+  /*padding-top: 20px;*/
   h1 {
     margin: 0;
     margin-bottom: 1.4em;
@@ -214,6 +264,7 @@ header {
   white-space:nowrap;
 }
 footer {
+  font-family: 'TeleGrotesk';
 
   h1 {
     margin: 0;
@@ -221,7 +272,16 @@ footer {
     font-size: 1.65em;
     color: #e20074;
     font-weight: normal;
+    font-family: 'TeleGroteskUltra';
   }
+  h3, strong {
+    font-family: 'TeleGroteskFett';
+
+  }
+  p {
+    font-size: 19px;
+  }
+
 }
 section {
   p {
@@ -245,12 +305,19 @@ hr {
   margin-top: 6.9375em;
 }
 .footer-container {
-  background: #EDEDED;
+  background: #fff;
   padding-bottom: .4em;
+  padding: 22px;
+  width: 920px;
+  h1 {
+    font-family: 'TeleGroteskUltra';
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 0;
+
+  }
 }
 footer {
-  margin-top: 1.25em;
-  padding-top: 2.125em;
   h3 {
     font-size: 1.375em;
     color: #e20074;
@@ -259,7 +326,9 @@ footer {
 }
 .footerlinks {
   margin-top: 2em;
-  font-size: 0.625em;
+  p {
+    font-size: 13px !important;
+  }
 }
 .map-wrapper {
   width: 27.625em;
@@ -273,8 +342,14 @@ footer {
 .main-nav {
   margin: 0;
   padding: 0;
+  margin-top: 23px;
   width: 100%;
   display: block;
+  li {
+    a {
+      font-family: 'TeleGroteskHalbfett';
+    }
+  }
 }
 
 .boxed {
@@ -299,10 +374,13 @@ footer {
   padding: 1.1875em;
   padding-left: 1.125em;
   padding-right: 0;
+  font-family: 'TeleGrotesk';
+  font-size: 19px;
+  border: 1px solid #fff;
   h4 {
     margin: 0;
     font-size: 1.125em;
-    font-weight: bold;
+    font-family: 'TeleGroteskFett';
     color: #4B4B4B;
   }
   ul {
@@ -317,25 +395,23 @@ footer {
   
 }
 .dark, .medium, .light {
-  border-color:#fff;
-  border-width:1px;
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
-  border-radius:6px;
-  border-style:solid;
   padding: 1.125em;
   padding-bottom: 0;
   margin-bottom: 12px;
+  font-family: 'TeleGrotesk';
+  font-size: 19px;
+  border: 1px solid #fff;
 
   h3 {
     font-size: 1.375em;
-    font-weight: bold;
+    font-family: 'TeleGroteskFett';
     margin: 0;
   }
   h4 {
     margin-top: 1.7em;
     margin-bottom: .1em;
     font-size: 1.125em;
+    font-family: 'TeleGroteskFett';
   }
   ul {
     /*line-height: 2em;*/
@@ -351,7 +427,7 @@ footer {
   }
 }
 .dark {
-  background: #4b4b4b;
+  background: #64b9e4;
   color: #fff;
   h3, h4, p, ul li {
     color: #fff;
@@ -359,13 +435,13 @@ footer {
 
 }
 .medium {
-  background: #D0D0D0;
-  color: #4B4B4B;
+  background: #99d1ed;
+  color: #383838;
 
 }
 .light {
-  background: #EDEDED;
-  color: #4b4b4b;
+  background: #cce8f6;
+  color: #383838;
 
 }
 
@@ -392,13 +468,14 @@ footer {
 
   p {
     line-height: 1.5em;
-    font-size: 1.125em;
     color:rgb(75,75,75);
+    line-height: 20px;
   }
   .top {
-    font-size: 1em;
-    line-height: 1.3em;
+    font-size: 19px;
+    line-height: 19px;
     margin-top: 0;
+    padding-bottom: 10px;
   }
   img {
     float: left;
@@ -507,12 +584,9 @@ footer {
     width: 100%;
   }
   .footer-container {
-    background: #EDEDED;
     padding-bottom: .4em;
   }
   footer {
-    margin-top: 1.25em;
-    padding-top: 2.125em;
     h3 {
       font-size: 1.375em;
       color: #e20074;
@@ -626,12 +700,10 @@ footer {
     width: 100%;
   }
   .footer-container {
-    background: #EDEDED;
     padding-bottom: .4em;
+    padding: 22px;
   }
   footer {
-    margin-top: 1.25em;
-    padding-top: 2.125em;
     h3 {
       font-size: 1.375em;
       color: #e20074;
@@ -786,7 +858,8 @@ footer {
     display: block;
   }
   .main-container {
-    margin-top: 6.9375em;
+    /*margin-top: 6.9375em;*/
+    margin-top: 156px;
   }
   .section-divider {
     display: block;
@@ -807,7 +880,6 @@ footer {
     font-size: 1em;
   }
   .segments {
-    margin-bottom: 2em;
   }
   header h1 {
     margin-bottom: 1.2em;
@@ -868,7 +940,7 @@ footer {
     margin-top: 2.7em;
   }
   .wrapper {
-    width: 57.5em;
+    width: 964px;
   }
   .main-nav {
     display:table;
@@ -876,11 +948,11 @@ footer {
   .main-nav li {
     display: table-cell;
     a {
-      font-size: 100%;
+      font-size: 18px;
     }
   }
   .filler {
-    width: 34%;
+    width: 28%;
   }
   .vector {
     margin-left: 0;
@@ -897,12 +969,13 @@ footer {
     padding-right: 1.5625em;
   }
   .countryinfo {
-    float: right;
-    width: 27.5625em;
+    float: left;
+    max-width: 442px;
+    margin-left: 34px;
   }
   .copyright {
     float: right;
-    width: 44em;
+    max-width: 442px;
   }
   .otherlinks {
     float: left;
@@ -912,13 +985,11 @@ footer {
     display: none;
   } 
   .footer-container {
-    background: #EDEDED;
-    margin-top: 3em;
-    padding-bottom: .4em;
+    padding: 22px;
   }
   footer {
-    margin-top: 1.25em;
-    padding-top: 2.125em;
+    padding-top: 10px;
+    
     h3 {
       font-size: 1.375em;
       color: #e20074;
@@ -958,6 +1029,52 @@ footer {
     float: left;
   }
 }
+article {
+  background: #fff;
+  padding: 22px;
+  margin-bottom: 50px;
+  header {
+    position: relative;
+    margin-bottom: 25px;
+    h1 {
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+      margin-bottom: 0;
+      color: #fff;
+      font-size: 31px;
+      line-height: 34px;
+      font-family: 'TeleGroteskFett';
+      text-transform: uppercase;
+      padding-top: 46px;
+      padding-right: 52px;
+      padding-left: 15px;
+      padding-bottom: 7px;
+      background: transparent url('../img/headline-bg-multiline.png') right top no-repeat;
+      span { 
+        display: block;
+        font-family: 'TeleGrotesk';
+      }
+    }
+  }
+  section {
+    p {
+      font-size: 19px;
+      color: #383838;
+      font-family: 'TeleGrotesk';
+      padding-right: 20px;
+      line-height: 25px;
+    }
+  }
+  section.intro_copy {
+    p {
+      font-family: 'TeleGroteskFett';
+      font-size: 21px; 
+      margin-bottom: 28px;
+    }
+  }
+}
+
 .subcontent h1 {
   font-size: 1.625em;
   margin-bottom: 1.4em;
@@ -987,7 +1104,7 @@ footer {
   Nav elements
   -=============== */
 
-$navcorner: 0.375em;
+$navcorner: 0px;
 .main-nav {
   position: relative;
   -mox-border-radius: $navcorner;
@@ -1033,11 +1150,13 @@ $navcorner: 0.375em;
 }
 .main-nav li a {
   display: block;
-  height: 2.4em;
-  line-height: 2.5em;
+  height: 39px;
+  line-height: 39px;
   color: #4B4B4B;
   padding: 0 1.1875px 0 1.1875px;
   text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .main-nav li a:link, .main-nav li a:visited {
 
@@ -1087,7 +1206,7 @@ $navcorner: 0.375em;
 
 .ir {
     background-color: transparent;
-    border: 0;
+    /*border: 0;*/
     overflow: hidden;
     text-indent: -9999px;
 }
