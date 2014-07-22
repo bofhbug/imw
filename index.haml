@@ -74,19 +74,19 @@
             %li.filler
 
       .mini-nav-wrapper
+        %p Navigation:
         %select.mini-nav
           %option{value: ""} Please choose ...
           %option{value: "1"} Deutsche Telekom for MVNOs
           %option{value: "2"} Selected Segments
           %option{value: "3"} Business Models
           %option{value: "4"} Contact Us
-        %p Navigation:
 
     .main-container
       .imprint.content.subcontent.wrapper.clearfix
         %article.clearfix
-          %header
-            %h1 Imprint
+          -#%header
+          -#  %h1 Imprint
           %section.clearfix
             .imprint-left
               %h3 Address:
@@ -148,8 +148,8 @@
 
       .legaldisclaimer.content.subcontent.wrapper.clearfix
         %article.clearfix
-          %header
-            %h1 Disclaimer
+          -#%header
+          -#  %h1 Disclaimer
           %section.clearfix
             %p
               Deutsche Telekom AG in no way guarantees that the 
@@ -280,7 +280,8 @@
             %h1 
               Deutsche Telekom For
               %span Mobile virtual network operators
-            %img{src: "img/title-mobile-virtual-network-operators.jpg", width: 920}
+            %img.desktop-block{src: "img/title-mobile-virtual-network-operators.jpg", width: "100%"}
+            %img.mobile-block{src: "img/title-mobile-virtual-network-operators-mobile.jpg", width: "100%"}
           %section.intro_copy
             %p 
               Deutsche Telekom is one of the world's leading integrated telecommunications companies. We operate mobile networks in 15 European countries as well as the US and offer the only cross-Atlantic mobile telecommunications footprint in the world.
@@ -305,7 +306,8 @@
           %header
             %h1 
               Selected Segments
-            %img{src: "img/title-selected-segments.jpg", width: 920}
+            %img.desktop-block{src: "img/title-selected-segments.jpg", width: "100%"}
+            %img.mobile-block{src: "img/title-selected-segments-mobile.jpg", width: "100%"}
 
 
           %section.intro_copy
@@ -318,7 +320,7 @@
               %h2 Retailers
               .spanwrapper
                 .vector
-                  %img{src: "img/pic_retailers.png", alt: "Retailers", width: 280}
+                  %img{src: "img/pic_retailers.png", alt: "Retailers", width: "100%"}
 
                 %ul
                   %li Increase points of sales footfall
@@ -331,7 +333,7 @@
               %h2 Ethnic Brands
               .spanwrapper
                 .vector
-                  %img{src: "img/pic_ethnic_brands.png", alt: "Ethnic Brands", width: 280}
+                  %img{src: "img/pic_ethnic_brands.png", alt: "Ethnic Brands", width: "100%"}
                 %ul
                   %li Monetize international calling routes and customer base
                   %li Provide best value mobile service for international calls
@@ -343,7 +345,7 @@
               %h2 Youth Brands
               .spanwrapper
                 .vector
-                  %img{src: "img/pic_youth_brands.png", alt: "Youth Brands", width: 280}
+                  %img{src: "img/pic_youth_brands.png", alt: "Youth Brands", width: "100%"}
                 %ul
                   %li Monetize brand awareness and media reach with teenager and young adult segments
                   %li Grow customers' brand interaction time and content consumption
@@ -356,7 +358,7 @@
               %h2 Social Networks
               .spanwrapper
                 .vector
-                  %img{src: "img/pic_social_networks.png", alt: "Social Networks", width: 280}
+                  %img{src: "img/pic_social_networks.png", alt: "Social Networks", width: "100%"}
                 %ul
                   %li Provide specific propositions for mobile social network use
                   %li Monetize user base by adding social commerce and service extras
@@ -367,7 +369,7 @@
               %h2 Fixed Operators
               .spanwrapper
                 .vector
-                  %img{src: "img/pic_fixed_operators.png", alt: "Fixed Operators", width: 280}
+                  %img{src: "img/pic_fixed_operators.png", alt: "Fixed Operators", width: "100%"}
                 %ul
                   %li Provide full telecommunications portfolio to subscriber base
                   %li Reduce churn by offering multi-play bundles
@@ -378,12 +380,11 @@
               %h2 Data
               .spanwrapper
                 .vector
-                  %img{src: "img/pic_data.png", alt: "Data", width: 280}
+                  %img{src: "img/pic_data.png", alt: "Data", width: "100%"}
                 %ul
                   %li Improve product appeal by bundling devices and connectivity
                   %li Offer advanced services (e.g. M2M, maintenance service)
                   %li Add continuous service revenues to one-time device sales revenues
-              %hr
 
 
         %article.clearfix.business-models
@@ -391,7 +392,8 @@
             %h1 
               Deutsche Telekom For
               %span Mobile virtual network operators
-            %img{src: "img/title-mobile-virtual-network-operators-business-models.jpg", width: 920}
+            %img.desktop-block{src: "img/title-mobile-virtual-network-operators-business-models.jpg", width: "100%"}
+            %img.mobile-block{src: "img/title-mobile-virtual-network-operators-business-models-mobile.jpg", width: "100%"}
           %section.intro_copy
             %p 
               We have experience with a large variety of business models that complement our partners' assets, competencies and investments. Together with our partners, we select the most appropriate commercial and technical set-up for each project.
@@ -560,7 +562,7 @@
             |
             %a{href: "#", id: 'link-imprint'} Imprint
             %span.copyrightline
-              &copy;Deutsche Telekom, 2013
+              &copy;Deutsche Telekom, 2014
 
 
 

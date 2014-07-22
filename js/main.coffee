@@ -43,12 +43,12 @@ $(document).ready ->
   # NAV
   deviceAgent = navigator.userAgent.toLowerCase()
   agentID = deviceAgent.match(/(iphone|ipod|ipad)/)
-  offsetMod = 100
+  offsetMod = 130
   if agentID
     #$('nav').css('display', 'none')
     #$('#mainwrap').css('margin-top', '90px')
-    offsetMod = 0
-    $('.header-container').css('position', 'absolute')
+    offsetMod = 10
+    #$('.header-container').css('position', 'absolute')
 
 
   $('.mini-nav').change (e) ->
@@ -56,7 +56,7 @@ $(document).ready ->
     switch e.currentTarget.value
       when "1"
         $.smoothScroll
-          offset: 4,
+          offset: 4
       when "2"
         targetOffset = $('.selected-segments').offset()
         $.smoothScroll
@@ -124,11 +124,11 @@ $(document).ready ->
     val = $(@).scrollTop()
     valWin = $(@).scrollTop()+$(@).height()
     if currentContent == '.maincontent'
-      if ($(@).scrollTop() + $(@).height()) > ($(document).height() - 200)
+      if ($(@).scrollTop() + $(@).height()) > ($(document).height() - 210)
         setBodyClass 'contact-state'
-      else if val > $('.business-models').offset().top-130
+      else if val > $('.business-models').offset().top-140
         setBodyClass 'business-models-state'
-      else if val > $('.selected-segments').offset().top-130
+      else if val > $('.selected-segments').offset().top-140
         setBodyClass 'selected-segments-state'
       else if val > 5
         setBodyClass 'home-state'
