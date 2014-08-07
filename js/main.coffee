@@ -182,7 +182,8 @@ $(document).ready ->
 
     $(currentContent).slideUp animDur, 'swing', =>
       currentContent = what
-    $(what).slideDown animDur
+    $(what).slideDown animDur, 'swing', =>
+      $('body').scroll()
 
 
   fadeBackToNormal = ->

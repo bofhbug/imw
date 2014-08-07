@@ -85,30 +85,28 @@
     .main-container
       .imprint.content.subcontent.wrapper.clearfix
         %article.clearfix
-          -#%header
-          -#  %h1 Imprint
+          %header
+            %h4 Imprint
           %section.clearfix
             .imprint-left
               %h3 Address:
               %p
-                %strong Deutsche Telekom AG
+                Deutsche Telekom AG
                 %br/
                 Friedrich Ebert Allee 140
                 %br/
                 53113 Bonn
                 %br/
-                %br/
                 Local Court Entry Bonn HRB 6794,
                 %br/
                 %br/
-                %strong Company Headquarters:
+                Company Headquarters:
                 %br/
                 Bonn, Germany
             .imprint-right
               %h3 Responsible:
               %p
                 Ursula Knipp
-                %br/
                 %br/
                 Deutsche Telekom AG
                 %br/ 
@@ -119,19 +117,17 @@
             .imprint-left
               %h3 Authorized to represent:
               %p
-                Ren&eacute; Obermann
+                Thimotheus H&ouml;ttges
                 %br/
                 Reinhard Clemens
                 %br/
                 Niek Jan van Damme
                 %br/
-                Timotheus H&ouml;ttges
+                Thomas Dannenfeldt
                 %br/
                 Dr. Thomas Kremer
                 %br/
                 Claudia Nemat
-                %br/
-                Prof. Dr. Marion Schick
 
             .imprint-right
               %h3 Editorial Staff:
@@ -148,8 +144,8 @@
 
       .legaldisclaimer.content.subcontent.wrapper.clearfix
         %article.clearfix
-          -#%header
-          -#  %h1 Disclaimer
+          %header
+            %h4 Disclaimer
           %section.clearfix
             %p
               Deutsche Telekom AG in no way guarantees that the 
@@ -188,7 +184,7 @@
       .privacypolicy.content.subcontent.wrapper.clearfix
         %article.clearfix
           %header
-            %h1 Privacy Policy
+            %h4 Privacy Policy
           %section
             %p
               Data protection and data security for customers and users have a 
@@ -279,16 +275,22 @@
           %header
             %h1 
               Deutsche Telekom For
-              %span Mobile virtual network operators
+              %br/
+              Mobile virtual network operators
+            <!--[if IE 8]>
+            %img{src: "img/title-mobile-virtual-network-operators-alt.jpg", width: "100%"}
+            <![endif]-->
             %img.desktop-block{src: "img/title-mobile-virtual-network-operators.jpg", width: "100%"}
             %img.mobile-block{src: "img/title-mobile-virtual-network-operators-mobile.jpg", width: "100%"}
           %section.intro_copy
             %p 
-              Deutsche Telekom is one of the world's leading integrated telecommunications companies. We operate mobile networks in 15 European countries as well as the US and offer the only cross-Atlantic mobile telecommunications footprint in the world.
+              Deutsche Telekom is one of the world's leading integrated telecommunications companies. We operate mobile networks in 14 European countries as well as the US and offer the only cross-Atlantic mobile telecommunications footprint in the world.
 
           %section
             %p 
-              Our goal is to innovate our industry and provide our customers with the best possible service. Essential to achieving this objective are strong partnerships, of which one of the most important is the enablement of Mobile Virtual Network Operators (MVNOs). We are a pioneer in the Virtual Operator field and host a number of the world's most successful MVNOs on our networks. With our extensive knowledge, we give our partners the support they need to successfully enter the telecommunications space.
+              Our goal is to innovate our industry and provide our customers with the best possible service. Essential to achieving this objective are strong partnerships, of which one of the most important is the enablement of Mobile Virtual Network Operators (MVNOs). 
+              %br/
+              We are a pioneer in the Virtual Operator field and host a number of the world's most successful MVNOs on our networks. With our extensive knowledge, we give our partners the support they need to successfully enter the telecommunications space.
 
 
         -#%article.clearfix
@@ -306,6 +308,9 @@
           %header
             %h1 
               Selected Segments
+            <!--[if IE 8]>
+            %img{src: "img/title-selected-segments-alt.jpg", width: "100%"}
+            <![endif]-->
             %img.desktop-block{src: "img/title-selected-segments.jpg", width: "100%"}
             %img.mobile-block{src: "img/title-selected-segments-mobile.jpg", width: "100%"}
 
@@ -390,8 +395,10 @@
         %article.clearfix.business-models
           %header
             %h1 
-              Deutsche Telekom For
-              %span Mobile virtual network operators
+              Business Models
+            <!--[if IE 8]>
+            %img{src: "img/title-mobile-virtual-network-operators-business-models-alt.jpg", width: "100%"}
+            <![endif]-->
             %img.desktop-block{src: "img/title-mobile-virtual-network-operators-business-models.jpg", width: "100%"}
             %img.mobile-block{src: "img/title-mobile-virtual-network-operators-business-models-mobile.jpg", width: "100%"}
           %section.intro_copy
@@ -505,7 +512,7 @@
             %a{href: "mailto:mvno@telekom.de"} mvno@telekom.de
           %p
             We offer the only transatlantic mobile communications footprint, 
-            covering 15 European countries and the US.
+            covering 14 European countries and the US.
           %p
             If you are interested in becoming an MVNO hosted by one of our 
             mobile operations, please contact us!
@@ -522,7 +529,6 @@
             %option{value: ""} Choose a destination ...
             %option{value: "http://www.amc.al/"} Albania: AMC 
             %option{value: "http://www.t-mobile.at/"} Austria: T-Mobile Austria 
-            %option{value: "http://www.globul.bg/eng/"} Bulgaria: Globul
             %option{value: "http://www.t.ht.hr/eng"} Croatia: T-Hrvatski Telekom 
             %option{value: "http://www.t-mobile.cz/"} Czech Republic: T-Mobile Czech Republic 
             %option{value: "http://www.telekom.de/"} Germany: Telekom Deutschland
@@ -532,8 +538,8 @@
             %option{value: "http://www.telekom.me/"} Montenegro: Crnogorski Telekom
             %option{value: "http://www.t-mobile.nl/"} Netherlands: T-Mobile Netherlands 
             %option{value: "http://www.t-mobile.pl/en/"} Poland: T-Mobile Poland 
-            %option{value: "http://www.slovaktelekom.sk/"} Slovakia: Slovak Telekom 
-            %option{value: "http://www.cosmote.ro/en/"} Romania: Cosmote Romania 
+            %option{value: "http://www.telekom.sk/"} Slovakia: Slovak Telekom 
+            %option{value: "http://www.cosmote.ro/"} Romania: Cosmote Romania 
             %option{value: "http://everythingeverywhere.com/"} United Kingdom: Everything Everywhere
             %option{value: "http://www.t-mobile.com/"} USA: T-Mobile USA 
 
@@ -548,7 +554,7 @@
           %p.copyright
             %span
               Other Links: 
-            %a{href: "http://telekom.de"} Deutsche Telekom
+            %a{href: "http://telecom.com"} Deutsche Telekom
             |
             %a{href: "http://www.telekom-icss.com/"} ICSS
             |

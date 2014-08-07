@@ -1,3 +1,36 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+@encoding "UTF-8";
+@font-face {
+  font-family: 'Tele-Icon';
+  src: url("../fonts/Tele-Icon.eot");
+  src: url("../fonts/Tele-Icon.eot?#iefix") format("embedded-opentype"), url("../fonts/Tele-Icon.svg#Tele-Icon") format("svg"), url("../fonts/Tele-Icon.woff") format("woff"), url("../fonts/Tele-Icon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon:before, .icon .before {
+  font-family: Tele-Icon;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'TeleGrotesk';
+  src: url("../fonts/TeleGroteskNormal.eot?") format("eot"), url("../fonts/TeleGroteskNormal.woff") format("woff");
+}
+@font-face {
+  font-family: 'TeleGroteskFett';
+  src: url("../fonts/TeleGroteskFett.eot?") format("eot"), url("../fonts/TeleGroteskFett.woff") format("woff");
+}
+@font-face {
+  font-family: 'TeleGroteskHalbfett';
+  src: url("../fonts/TeleGroteskHalbfett.eot?") format("eot"), url("../fonts/TeleGroteskHalbfett.woff") format("woff");
+}
+@font-face {
+  font-family: 'TeleGroteskUltra';
+  src: url("../fonts/TeleGroteskUltra.eot?") format("eot"), url("../fonts/TeleGroteskUltra.woff") format("woff");
+}
+
 
 
 
@@ -89,14 +122,14 @@ header.wrapper {
 }
 .span3 {
   h2, h3 {
-    font-family: 'Arial';
-    font-weight: bold;
+    font-family: 'TeleGroteskFett';
 
   }
   h2 {
     color: #4B4B4B;
     /*font-size: 1.625em;*/
     font-size: 160%;
+    font-weight: normal;
   }
   ul {
     padding-left: 0;
@@ -110,7 +143,7 @@ header.wrapper {
       margin-bottom: 1em;
       font-size: 19px;
       color: #383838;
-      font-family: 'Arial';
+      font-family: 'TeleGrotesk';
     }
   }
 }
@@ -203,9 +236,6 @@ $logoclaimheight: 15px;
   z-index: 500;
   height: 135px;
   background: #ededed;
-  position: fixed;
-  left: 50%;
-  margin-left: -482px;
 }
 header {
   position: relative;
@@ -273,7 +303,7 @@ hr {
   display: block;
   li {
     a {
-      font-family: 'Arial';
+      font-family: 'TeleGroteskHalbfett';
     }
   }
 }
@@ -301,15 +331,14 @@ hr {
   padding-left: 1.125em;
   padding-right: 0;
   margin-bottom: 10px;
-  font-family: 'Arial';
+  font-family: 'TeleGrotesk';
   font-size: 19px;
   border: 1px solid #fff;
   background: #ededed;
   h4 {
     margin: 0;
     font-size: 1.125em;
-    font-family: 'Arial';
-    font-weight: bold;
+    font-family: 'TeleGroteskFett';
     color: #4B4B4B;
   }
   ul {
@@ -327,22 +356,20 @@ hr {
   padding: 1.125em;
   padding-bottom: 0;
   margin-bottom: 12px;
-  font-family: 'Arial';
+  font-family: 'TeleGrotesk';
   font-size: 19px;
   border: 1px solid #fff;
 
   h3 {
     font-size: 1.375em;
-    font-family: 'Arial';
-    font-weight: bold;
+    font-family: 'TeleGroteskFett';
     margin: 0;
   }
   h4 {
     margin-top: 1.7em;
     margin-bottom: .1em;
     font-size: 1.125em;
-    font-family: 'Arial';
-    font-weight: bold;
+    font-family: 'TeleGroteskFett';
   }
   ul {
     /*line-height: 2em;*/
@@ -379,29 +406,8 @@ hr {
 .light {
   background: #cce8f6;
   color: #383838;
-}
 
-
-.dark {
-  height: 330px;
 }
-.dark + .fillerbox {
-  height: 107px;
-}
-.medium {
-  height: 310px;
-}
-.medium + .fillerbox {
-  height: 127px;
-}
-.light {
-  height: 250px;
-}
-.light + .fillerbox {
-  height: 187px;
-}
-
-
 
 .span3 {
   hr {
@@ -445,45 +451,31 @@ article {
       display: none;
       position: absolute;
       color: #fff;
-      font-family: 'Arial';
-      font-weight: bold;
+      font-family: 'TeleGroteskFett';
       text-transform: uppercase;
       background: transparent url('../img/headline-bg-multiline.png') right top no-repeat;
       span { 
         display: block;
-        font-family: 'Arial';
+        font-family: 'TeleGrotesk';
       }
     }
   }
   section {
     p {
-      font-size: 17px;
+      font-size: 19px;
       color: #383838;
-      font-family: 'Arial';
+      font-family: 'TeleGrotesk';
       padding-right: 20px;
       line-height: 25px;
     }
   }
   section.intro_copy {
     p {
-      font-family: 'Arial';
-      font-weight: bold;
-      font-size: 19px; 
+      font-family: 'TeleGroteskFett';
+      font-size: 21px; 
       margin-bottom: 28px;
     }
   }
-}
-.imprint, .privacypolicy, .legaldisclaimer {
-  header {
-    background: transparent;
-    h4 {
-      display: block;
-      background: white;
-      color: #e20074;
-      font-size: 32px;
-    }
-  }
-
 }
 
 .subcontent h1 {
@@ -523,22 +515,13 @@ article {
 
 .header-container {
   width: 964px;
+  margin: 0 auto;
 }
 .header-container, .footer-container {
   width: 964px;
 }
-.maincontent, .main-container {
+.maincontent, .main-container, .footer-container {
   margin: 0 auto;
-  margin-top: 150px;
-}
-.footer-container { 
-  margin: 0 auto;
-
-}
-.imprint, .legaldisclaimer, .privacypolicy {
-  margin: 0 auto;
-  margin-top: 150px;
-
 }
 header.wrapper {
   width: 964px;
@@ -567,7 +550,7 @@ nav {
       padding-right: 20px;
       height: 39px;
       line-height: 39px;
-      font-size: 16px;
+      font-size: 19px;
     }
   }
   .filler {
@@ -611,20 +594,18 @@ article {
   }
   section {
     p {
-      font-size: 17px;
+      font-size: 19px;
       color: #383838;
-      font-family: 'Arial';
+      font-family: 'TeleGrotesk';
       padding-right: 20px;
-      line-height: 22px;
+      line-height: 25px;
     }
   }
   section.intro_copy {
     p {
-      font-family: 'Arial';
-      font-weight: bold;
-      font-size: 18px; 
-      line-height: 24px;
-      margin-bottom: 18px;
+      font-family: 'TeleGroteskFett';
+      font-size: 21px; 
+      margin-bottom: 28px;
     }
   }
 }
@@ -634,7 +615,7 @@ section p {
 }
 .subcontent section p {
   font-size: 1em;
-  color: #383838;
+  color: #797979;
 }
 section.span2 p {
   font-size: 1em;
@@ -664,7 +645,9 @@ header h1 {
   width: 17.5em;
   margin-right: 2.35em;
   h2, h3 {
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 29px;
     cursor: auto;
     background: none;
     padding-left: 0;
@@ -672,9 +655,6 @@ header h1 {
   h2 {
     margin-top: 0.5em;
     margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: bold;
   }
   h2.open, h3.open {
     background: none;
@@ -686,13 +666,10 @@ header h1 {
   }
   h3 {
     margin-bottom: 0.5em;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 29px;
   }
   h4 {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 26px;
+    line-height: 29px;
 
   }
   .spanwrapper {
@@ -701,12 +678,9 @@ header h1 {
   hr {
     display: none;
   }
-  p {
-    font-size: 14px;
-  }
   ul li {
     margin-bottom: .5;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .span3:last-of-type {
@@ -740,12 +714,11 @@ header h1 {
 }
 .copyright {
   float: right;
-  width: 440px;
-  margin-right: 40px;
+  width: 442px;
 }
 .otherlinks {
   float: left;
-  width: 400px;
+  width: 40em;
 }
 .mobile-only, .mobile-block, .desktop-block {
   display: none;
@@ -754,21 +727,19 @@ header h1 {
   padding: 0;
 }
 footer {
-  font-family: 'Arial';
+  font-family: 'TeleGrotesk';
   color: #383838;
   padding: 20px;
   h1 {
     margin: 0;
     margin-bottom: 27px;
     color: #e20074;
-    font-family: 'Arial';
-    font-weight: bolder;
-    font-size: 28px;
+    font-family: 'TeleGroteskUltra';
+    font-size: 36px;
     text-transform: uppercase;
   }
   h3 {
-    font-family: 'Arial';
-    font-weight: bold;
+    font-family: 'TeleGroteskFett';
     font-size: 1.375em;
     color: #e20074;
     margin-bottom: 2.1em;
@@ -776,12 +747,11 @@ footer {
   }
   p {
     margin: 1em 0;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 20px;
   }
   strong {
-    font-family: 'Arial';
-    font-weight: bold;
+    font-family: 'TeleGroteskFett';
   }
   .footerlinks {
     margin-top: 2em;
@@ -902,7 +872,7 @@ $navcorner: 0px;
   behavior: url('PIE.htc');
 }
 .main-nav li {
-  font-size: 12px !important;
+  font-size: 0.875em;
   color: #4b4b4b;
   border-right: 1px solid #c0c0c0;
 }
@@ -916,9 +886,9 @@ $navcorner: 0px;
   display: block;
   text-align:center;
   height: 2.4em;
-  line-height: 36px;
+  line-height: 2.5em;
   color: #4B4B4B;
-  padding: 0 5px 0 5px;
+  padding: 0 1.1875px 0 1.1875px;
   text-decoration: none;
 }
 .main-nav li a:link, .main-nav li a:visited {

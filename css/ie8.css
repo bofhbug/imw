@@ -1,30 +1,3 @@
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
-@encoding "UTF-8";
-@font-face {
-  font-family: 'Tele-Icon';
-  src: url("../fonts/Tele-Icon.eot");
-  src: url("../fonts/Tele-Icon.eot?#iefix") format("embedded-opentype"), url("../fonts/Tele-Icon.svg#Tele-Icon") format("svg"), url("../fonts/Tele-Icon.woff") format("woff"), url("../fonts/Tele-Icon.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-.icon:before, .icon .before {
-  font-family: Tele-Icon;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-@font-face {
-  font-family: 'TeleGrotesk';
-  src: url("../fonts/TeleGroteskNormal.eot?") format("eot"), url("../fonts/TeleGroteskNormal.woff") format("woff"); }
-@font-face {
-  font-family: 'TeleGroteskFett';
-  src: url("../fonts/TeleGroteskFett.eot?") format("eot"), url("../fonts/TeleGroteskFett.woff") format("woff"); }
-@font-face {
-  font-family: 'TeleGroteskHalbfett';
-  src: url("../fonts/TeleGroteskHalbfett.eot?") format("eot"), url("../fonts/TeleGroteskHalbfett.woff") format("woff"); }
-@font-face {
-  font-family: 'TeleGroteskUltra';
-  src: url("../fonts/TeleGroteskUltra.eot?") format("eot"), url("../fonts/TeleGroteskUltra.woff") format("woff"); }
 html,
 button,
 input,
@@ -90,12 +63,12 @@ header.wrapper {
   padding-right: 3%; }
 
 .span3 h2, .span3 h3 {
-  font-family: 'TeleGroteskFett'; }
+  font-family: 'Arial';
+  font-weight: bold; }
 .span3 h2 {
   color: #4B4B4B;
   /*font-size: 1.625em;*/
-  font-size: 160%;
-  font-weight: normal; }
+  font-size: 160%; }
 .span3 ul {
   padding-left: 0;
   /*list-style-image: url("../img/dot.png");*/
@@ -107,7 +80,7 @@ header.wrapper {
     margin-bottom: 1em;
     font-size: 19px;
     color: #383838;
-    font-family: 'TeleGrotesk'; }
+    font-family: 'Arial'; }
 
 .vector {
   background: #ededed;
@@ -188,7 +161,10 @@ header.wrapper {
   top: 0;
   z-index: 500;
   height: 135px;
-  background: #ededed; }
+  background: #ededed;
+  position: fixed;
+  left: 50%;
+  margin-left: -482px; }
 
 header {
   position: relative;
@@ -241,7 +217,7 @@ hr {
   width: 100%;
   display: block; }
   .main-nav li a {
-    font-family: 'TeleGroteskHalbfett'; }
+    font-family: 'Arial'; }
 
 .fixed {
   margin-bottom: -500px;
@@ -262,14 +238,15 @@ hr {
   padding-left: 1.125em;
   padding-right: 0;
   margin-bottom: 10px;
-  font-family: 'TeleGrotesk';
+  font-family: 'Arial';
   font-size: 19px;
   border: 1px solid #fff;
   background: #ededed; }
   .fillerbox h4 {
     margin: 0;
     font-size: 1.125em;
-    font-family: 'TeleGroteskFett';
+    font-family: 'Arial';
+    font-weight: bold;
     color: #4B4B4B; }
   .fillerbox ul {
     margin-top: .7em;
@@ -282,18 +259,20 @@ hr {
   padding: 1.125em;
   padding-bottom: 0;
   margin-bottom: 12px;
-  font-family: 'TeleGrotesk';
+  font-family: 'Arial';
   font-size: 19px;
   border: 1px solid #fff; }
   .dark h3, .medium h3, .light h3 {
     font-size: 1.375em;
-    font-family: 'TeleGroteskFett';
+    font-family: 'Arial';
+    font-weight: bold;
     margin: 0; }
   .dark h4, .medium h4, .light h4 {
     margin-top: 1.7em;
     margin-bottom: .1em;
     font-size: 1.125em;
-    font-family: 'TeleGroteskFett'; }
+    font-family: 'Arial';
+    font-weight: bold; }
   .dark ul, .medium ul, .light ul {
     /*line-height: 2em;*/
     margin-top: .7em; }
@@ -320,6 +299,24 @@ hr {
   background: #cce8f6;
   color: #383838; }
 
+.dark {
+  height: 330px; }
+
+.dark + .fillerbox {
+  height: 107px; }
+
+.medium {
+  height: 310px; }
+
+.medium + .fillerbox {
+  height: 127px; }
+
+.light {
+  height: 250px; }
+
+.light + .fillerbox {
+  height: 187px; }
+
 .span3 hr {
   margin-top: .8em; }
 
@@ -339,24 +336,35 @@ article {
   article header {
     position: relative; }
     article header h1 {
+      display: none;
       position: absolute;
       color: #fff;
-      font-family: 'TeleGroteskFett';
+      font-family: 'Arial';
+      font-weight: bold;
       text-transform: uppercase;
       background: transparent url("../img/headline-bg-multiline.png") right top no-repeat; }
       article header h1 span {
         display: block;
-        font-family: 'TeleGrotesk'; }
+        font-family: 'Arial'; }
   article section p {
-    font-size: 19px;
+    font-size: 17px;
     color: #383838;
-    font-family: 'TeleGrotesk';
+    font-family: 'Arial';
     padding-right: 20px;
     line-height: 25px; }
   article section.intro_copy p {
-    font-family: 'TeleGroteskFett';
-    font-size: 21px;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 19px;
     margin-bottom: 28px; }
+
+.imprint header, .privacypolicy header, .legaldisclaimer header {
+  background: transparent; }
+  .imprint header h4, .privacypolicy header h4, .legaldisclaimer header h4 {
+    display: block;
+    background: white;
+    color: #e20074;
+    font-size: 32px; }
 
 .subcontent h1 {
   font-size: 1.625em;
@@ -388,14 +396,21 @@ article {
   display: none; }
 
 .header-container {
-  width: 964px;
-  margin: 0 auto; }
+  width: 964px; }
 
 .header-container, .footer-container {
   width: 964px; }
 
-.maincontent, .main-container, .footer-container {
+.maincontent, .main-container {
+  margin: 0 auto;
+  margin-top: 150px; }
+
+.footer-container {
   margin: 0 auto; }
+
+.imprint, .legaldisclaimer, .privacypolicy {
+  margin: 0 auto;
+  margin-top: 150px; }
 
 header.wrapper {
   width: 964px; }
@@ -421,7 +436,7 @@ nav {
       padding-right: 20px;
       height: 39px;
       line-height: 39px;
-      font-size: 19px; }
+      font-size: 16px; }
   .main-nav .filler {
     width: 28%; }
 
@@ -459,15 +474,17 @@ article {
       padding-bottom: 7px;
       background: transparent url("../img/headline-bg-multiline.png") right top no-repeat; }
   article section p {
-    font-size: 19px;
+    font-size: 17px;
     color: #383838;
-    font-family: 'TeleGrotesk';
+    font-family: 'Arial';
     padding-right: 20px;
-    line-height: 25px; }
+    line-height: 22px; }
   article section.intro_copy p {
-    font-family: 'TeleGroteskFett';
-    font-size: 21px;
-    margin-bottom: 28px; }
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 18px; }
 
 section p {
   margin-top: 0em;
@@ -475,7 +492,7 @@ section p {
 
 .subcontent section p {
   font-size: 1em;
-  color: #797979; }
+  color: #383838; }
 
 section.span2 p {
   font-size: 1em; }
@@ -502,31 +519,37 @@ header h1 {
   width: 17.5em;
   margin-right: 2.35em; }
   .span3 h2, .span3 h3 {
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 29px;
+    font-weight: bold;
     cursor: auto;
     background: none;
     padding-left: 0; }
   .span3 h2 {
     margin-top: 0.5em;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold; }
   .span3 h2.open, .span3 h3.open {
     background: none; }
   .span3 .dark h3, .span3 .dark h3.open {
     background: none; }
   .span3 h3 {
-    margin-bottom: 0.5em; }
-  .span3 h4 {
+    margin-bottom: 0.5em;
+    font-weight: bold;
     font-size: 26px;
     line-height: 29px; }
+  .span3 h4 {
+    font-size: 20px;
+    line-height: 22px; }
   .span3 .spanwrapper {
     display: block !important; }
   .span3 hr {
     display: none; }
+  .span3 p {
+    font-size: 14px; }
   .span3 ul li {
     margin-bottom: .5;
-    font-size: 16px; }
+    font-size: 14px; }
 
 .span3:last-of-type {
   margin-right: 0; }
@@ -558,41 +581,45 @@ header h1 {
 
 .copyright {
   float: right;
-  width: 442px; }
+  width: 440px;
+  margin-right: 40px; }
 
 .otherlinks {
   float: left;
-  width: 40em; }
+  width: 400px; }
 
-.mobile-only, .mobile-block {
+.mobile-only, .mobile-block, .desktop-block {
   display: none; }
 
 .footer-container {
   padding: 0; }
 
 footer {
-  font-family: 'TeleGrotesk';
+  font-family: 'Arial';
   color: #383838;
   padding: 20px; }
   footer h1 {
     margin: 0;
     margin-bottom: 27px;
     color: #e20074;
-    font-family: 'TeleGroteskUltra';
-    font-size: 36px;
+    font-family: 'Arial';
+    font-weight: bolder;
+    font-size: 28px;
     text-transform: uppercase; }
   footer h3 {
-    font-family: 'TeleGroteskFett';
+    font-family: 'Arial';
+    font-weight: bold;
     font-size: 1.375em;
     color: #e20074;
     margin-bottom: 2.1em;
     margin-top: 0.5em; }
   footer p {
     margin: 1em 0;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 20px; }
   footer strong {
-    font-family: 'TeleGroteskFett'; }
+    font-family: 'Arial';
+    font-weight: bold; }
   footer .footerlinks {
     margin-top: 2em; }
     footer .footerlinks p {
@@ -643,7 +670,6 @@ footer {
 .main-nav {
   position: relative;
   z-index: 100;
-  border-radius: 0.375em;
   background-image: -moz-linear-gradient(white 0%, white 10%, #e7e7e7 93%, #d7d7d7 98%, #d7d7d7 100%);
   /* safari v4.0+ and by Chrome v3.0+ */
   background-image: -webkit-gradient(linear, color-stop(0, white), color-stop(0.1, white), color-stop(0.93, #e7e7e7), color-stop(0.98, #d7d7d7), color-stop(1, #d7d7d7));
@@ -666,12 +692,10 @@ footer {
 
 .main-nav li:first-child a {
   position: relative;
-  border-top-left-radius: 0.375em;
-  border-bottom-left-radius: 0.375em;
   behavior: url("PIE.htc"); }
 
 .main-nav li {
-  font-size: 0.875em;
+  font-size: 12px !important;
   color: #4b4b4b;
   border-right: 1px solid #c0c0c0; }
 
@@ -684,9 +708,9 @@ footer {
   display: block;
   text-align: center;
   height: 2.4em;
-  line-height: 2.5em;
+  line-height: 36px;
   color: #4B4B4B;
-  padding: 0 1.1875px 0 1.1875px;
+  padding: 0 5px 0 5px;
   text-decoration: none; }
 
 /* ==========================================================================
